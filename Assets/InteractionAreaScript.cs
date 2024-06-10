@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractionAreaScript : MonoBehaviour
 {
+    public int puntos;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,17 +16,19 @@ public class InteractionAreaScript : MonoBehaviour
     {
         
     }
-    void alimentarse(int ValorAlimentario)
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
-        FileteScript filete;
-        filete = other.GetComponent<FileteScript>();
-        if (filete)
+        PickUpScript objeto;
+        objeto = other.GetComponent<PickUpScript>();
+        if (objeto.esComida == true)
         {
             Destroy(other.gameObject);
+            Debug.Log("Era comida");
+            puntos += objeto.puntosItem;
+        }
+        else
+        {
+            puntos += objeto.puntosItem;
         }
     }
 }
