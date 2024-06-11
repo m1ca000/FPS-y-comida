@@ -318,7 +318,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 9999999
 --- !u!222 &353567131
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -556,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
+  puntaje: {fileID: 0}
 --- !u!54 &1352308693
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractionAreaScript : MonoBehaviour
 {
     public int puntos;
+    public Text puntaje;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +27,12 @@ public class InteractionAreaScript : MonoBehaviour
             Destroy(other.gameObject);
             Debug.Log("Era comida");
             puntos += objeto.puntosItem;
+            puntaje.text = puntos.ToString();
         }
-        else
+        else if (objeto.esComida == false)
         {
             puntos += objeto.puntosItem;
+            puntaje.text = puntos.ToString();
         }
     }
 }
