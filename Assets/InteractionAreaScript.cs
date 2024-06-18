@@ -29,7 +29,7 @@ public class InteractionAreaScript : MonoBehaviour
             puntos += objeto.puntosItem;
             puntaje.text = puntos.ToString();
         }
-        else if (objeto.esComida == false)
+        else
         {
             puntos += objeto.puntosItem;
             puntaje.text = puntos.ToString();

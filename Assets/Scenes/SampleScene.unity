@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
-  puntaje: {fileID: 0}
+  puntaje: {fileID: 353567130}
 --- !u!54 &1352308693
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -676,7 +676,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   esComida: 0
-  puntosItem: 50
+  puntosItem: 100
+--- !u!135 &1366917432
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366917430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13877608
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1616585613
 GameObject:
   m_ObjectHideFlags: 0
